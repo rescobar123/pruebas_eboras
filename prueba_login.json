@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "84651913-7076-4c93-92b2-e4ca07635151",
+		"name": "Prueba jenkins",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Api-Secret-Key",
+						"value": "T0pocmtyQzM0WnJQejE1ZGtzMGtRYVdmcURHazZRWTEySk9HOGdSK0d0OU5uY3V0WVM1WDYwYzIxZjdQNjVzUw==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"login\": \"RNAYALA\",\n        \"password\": \"RNAYALA\",\n        \"schema\": \"sv\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:10940/AppEborasAPITracking/rest/authentication/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "10940",
+					"path": [
+						"AppEborasAPITracking",
+						"rest",
+						"authentication",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
